@@ -32,6 +32,80 @@
                 <p>Understand what went wrong and how to fix it with our clear, readable test results.</p>
             </div>
         </div>
+
+        <section id="getting-started">
+            <h2>Getting Started</h2>
+            <p>Getting started with Test Boss is quick and easy. Follow these simple steps to begin your testing journey:</p>
+            
+            <ol class="steps-list">
+                <li>
+                    <strong>Installation:</strong><br>
+                    Open your terminal and run:
+                    <div class="code-example">npm install -g test-boss</div>
+                </li>
+                <li>
+                    <strong>Create Your First Test:</strong><br>
+                    Create a new file called <code>example.test.js</code> and add:
+                    <div class="code-example">
+import { test } from 'test-boss';
+
+test('my first test', () => {
+    expect(2 + 2).toBe(4);
+});</div>
+                </li>
+                <li>
+                    <strong>Run Your Tests:</strong><br>
+                    In your terminal, run:
+                    <div class="code-example">test-boss example.test.js</div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="features">
+            <h2>Features Deep Dive</h2>
+            <p>Test Boss comes packed with features that make testing accessible and enjoyable for beginners:</p>
+            
+            <h3>Intelligent Test Runner</h3>
+            <p>Our smart test runner automatically detects and runs your tests, providing clear feedback about what passed and what needs attention.</p>
+            <div class="code-example">
+// Example of Test Boss's clear feedback
+test('check user authentication', () => {
+    const user = login('test@example.com', 'password');
+    expect(user.isAuthenticated).toBe(true);
+    expect(user.email).toBe('test@example.com');
+});</div>
+
+            <h3>Assertion Library</h3>
+            <p>Write expressive tests with our built-in assertion library that uses natural language patterns:</p>
+            <div class="code-example">
+expect(response.status).toBe(200);
+expect(user.name).toContain('John');
+expect(items).toHaveLength(3);
+expect(callback).toHaveBeenCalled();</div>
+
+            <h3>Async Testing</h3>
+            <p>Testing asynchronous code is straightforward with Test Boss:</p>
+            <div class="code-example">
+test('async operations', async () => {
+    const data = await fetchUserData();
+    expect(data.status).toBe('success');
+});</div>
+        </section>
+
+        <section id="community">
+            <h2>Join Our Community</h2>
+            <p>Test Boss is backed by a growing community of developers who are passionate about making testing accessible to everyone. Get involved and get support through our various channels:</p>
+            
+            <div class="community-links">
+                <a href="/docs" class="community-link">Documentation</a>
+                <a href="/discord" class="community-link">Discord Community</a>
+                <a href="/github" class="community-link">GitHub</a>
+                <a href="/forum" class="community-link">Discussion Forum</a>
+            </div>
+
+            <h3>Contributing</h3>
+            <p>We welcome contributions from developers of all skill levels! Whether you're fixing a bug, improving documentation, or adding a new feature, check out our contribution guidelines to get started.</p>
+        </section>
     </div>
 </body>
 </html>
