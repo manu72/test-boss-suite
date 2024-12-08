@@ -1,0 +1,13 @@
+{
+  "name": "test-boss-suite",
+  "version": "1.0.0",
+  "description": "A simple testing tool designed for beginner developers",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve",
+    "dev": "npx serve"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+} 
